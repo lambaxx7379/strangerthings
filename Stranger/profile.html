@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Material+Icons|Tomorrow|Noto+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="profile.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script defer src="profile.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div id="profile">
+        <header>
+            <span>Stranger Things</span>
+            <span><a href="index.html"><button type="button" class="btn btn-outline-dark home-button">Home</button></a></span>
+        </header>
+        <div class="post-block">
+            <h2 class="postheader">My Posts!</h2>
+            <div class="posts"></div>
+        </div>
+        <div class="message-block">
+            <h2 class="messageheader">My Messages!</h2>
+            <div class="messages">
+              <div class="received-block">
+                <h3>Received Messages: </h3>
+              <div class="received-messages"></div>
+            </div>
+              <div class="sent-block">
+                <h3>Sent Messages: </h3>
+              <div class="sent-messages"></div>
+              </div>
+            </div>
+        </div>
+        <div class="logbar">
+            <a href="index.html"><button type="button" class="btn btn-outline-dark log logout">Logout</button></a>
+        </div>
+        <div class="editform">
+            <div class="editstyle">
+              <h2 class="editformheader">Edit Your Post:</h2>
+                  <form class="edit-form" action="" method="">
+                    <div class="form-group forminput">
+                      <label for="edit-title">Edit Title:</label>
+                      <input type="text" class="form-control" id="edit-title" placeholder="Your Title..." required>
+                    </div>
+                    <div class="form-group forminput">
+                      <label for="edit-description">Edit Description:</label>
+                      <textarea class="form-control" id="edit-description" rows="3" placeholder="Your Decscription..." required></textarea>
+                    </div>
+                    <div class="form-group forminput">
+                      <label for="edit-price">Edit Price:</label>
+                      <input type="text" class="form-control" id="edit-price" placeholder="Your Price..." required>
+                    </div>
+                    <div class="form-group forminput">
+                      <label for="edit-location">Edit Location:</label>
+                      <input type="text" class="form-control" id="edit-location" placeholder="Your Location..." >
+                    </div>
+                    <div class="form-group forminput">
+                      <label for="edit-deliver">Edit Will Deliver:</label>
+                      <select class="form-control" id="edit-deliver">
+                        <option>true</option>
+                        <option>false</option>
+                      </select>
+                    </div>
+                    <p>All Sections must be filled out</p>
+                    <div class="cancel-create">
+                      <button type="button" class="btn btn-outline-primary edit-create">Edit Post</button>
+                      <button type="button" class="btn btn-outline-danger edit-cancel">Cancel</button>
+                    </div>
+                  </form>
+            </div>
+          </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,176 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+#profile {
+    display: grid;
+    grid-template-rows: auto minmax(0, 1fr);
+    grid-template-columns: auto minmax(0, 1fr);
+    height: 100%;
+    max-height: 100%;
+    position: relative;
+}
+
+header {
+    grid-row: 1;
+    grid-column: 1 / 3;
+  
+    font-family: 'Tomorrow', sans-serif;
+    font-weight: 900;
+    font-style: italic;
+    font-size: 48px;
+    text-align: center;
+  
+    padding: 0.25em 0;
+  
+    background: white;
+    color: black;
+    border-bottom: 2px black solid;
+}  
+
+
+
+.post-block {
+    scroll-behavior: smooth;
+    overflow-y: scroll;
+    grid-row: 3;
+    grid-column: 1/2;
+    margin-top: 2vh;
+    margin-left: 2vw;
+    margin-right: 2vw;
+    width: 45vw;
+    height: 60vh;
+    box-shadow: 0 2px 12px -8px black;
+}
+
+.posts{
+    display: flex;
+    flex: auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    flex: 1 1 0%;
+}
+
+.post-card{
+    margin: 20px;
+}
+
+.sent-block{
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+}
+
+.received-block {
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+}
+
+.sent-messages {
+    display: flex;
+    flex-direction: row;
+}
+
+.received-messages {
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+.post-edit-button, .post-delete-button {
+    float: right;
+    margin-left: 10px;
+}
+
+.message-block {
+    scroll-behavior: smooth;
+    overflow-y: scroll;
+    grid-row: 3;
+    grid-column: 2/3;
+    margin-top: 2vh;
+    margin-left: 2vw;
+    margin-right: 2vw;
+    width: 45vw;
+    height: 60vh;
+    box-shadow: 0 2px 12px -8px black;
+   
+}
+
+/* .message-card {
+    border: black solid 1px;
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+} */
+
+.messages {
+    display: flex;
+    flex: auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    flex: 1 1 0%;
+    flex: auto;
+}
+
+.message-card {
+    margin: 20px;
+}
+
+.postheader {
+    border-bottom: black 1px solid;
+    padding: 10px;
+    background: turquoise;
+    width: 100%;
+}
+
+.messageheader {
+    border-bottom: black 1px solid;
+    padding: 10px;
+    background: turquoise;
+    width: 100%;
+}
+
+.home-button{
+    float: right;
+    margin: 20px;
+}
+
+.logbar {
+    grid-row: 4;
+    grid-column: 1/3;
+    text-align: center;
+    margin-top: 10vh;
+}
+
+.editform:not(.visible) {
+    display: none;
+  }
+
+.editform.visible {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    backdrop-filter: blur(6px);
+}
+
+.editstyle {
+    width: 50vw;
+}
+
+.edit-cancel, .edit-create {
+    float: right;
+    margin-left: 10px;
+}
